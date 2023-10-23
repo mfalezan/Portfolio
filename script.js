@@ -4,8 +4,6 @@ function toggleMenu() {
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
-<<<<<<< Updated upstream
-=======
 
 $(document).ready(function() {
   $('.testMgl').magnificPopup({
@@ -22,4 +20,3 @@ $(document).ready(function() {
   });
 });
 
->>>>>>> Stashed changes
