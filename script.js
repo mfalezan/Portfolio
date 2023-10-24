@@ -7,16 +7,13 @@ function toggleMenu() {
 
 $(document).ready(function() {
   $('.testMgl').magnificPopup({
-    type: 'iframe',
-    iframe: {
-      patterns: {
-        youtube: {
-          index: 'youtube.com/',
-          id: 'v=',
-          src: 'https://www.youtube.com/embed/%id%?rel=0'
-        }
-      }
-    }
+    type: 'inline',
+    preloader: false,
+    callbacks: {
+      open: function () {
+        $(".hidden-container").css("display", "block");
+      },
+    },
   });
 });
 

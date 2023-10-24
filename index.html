@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/mediaqueries.css" />
-    <link rel="stylesheet" href="css/timeline.css" />
+    <link rel="stylesheet" href="css/timeline.css" /> 
+    <link rel="stylesheet" href="css/about.css" />      
+    <link rel="stylesheet" href="css/project.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"/>
     <script src="jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"/>
     <script src="script.js"></script>
-    
-
   </head>
   <body>
     <nav id="desktop-nav">
@@ -25,6 +25,7 @@
         <ul class="nav-links">
           <li><a href="#moi">Moi</a></li>
           <li><a href="#experiences">Experiences</a></li>
+          <li><a href="#competences">Compétences</a></li>
           <li><a href="#projets">Projets</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -39,9 +40,10 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">Moi</a></li>
-          <li><a href="#competences" onclick="toggleMenu()">competences</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
+          <li><a href="#moi" onclick="toggleMenu()">Moi</a></li>
+          <li><a href="#experiences" onclick="toggleMenu()">Experiences</a></li>
+          <li><a href="#competences" onclick="toggleMenu()">Competences</a></li>
+          <li><a href="#projets" onclick="toggleMenu()">Projets</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
@@ -55,84 +57,72 @@
         <h1 class="title">Matthieu Falezan</h1>
         <p class="section__text__p2">Developpeur Full Stack</p>
         <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/CV_FALEZAN_MATTHIEU.pdf')"
-          >
-            Télécharger Mon Cv
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contactez Moi
-          </button>
+          <button class="btn btn-color-2" onclick="window.open('./assets/CV_FALEZAN_MATTHIEU.pdf')"
+          >Télécharger Mon Cv </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">Contactez Moi</button>
         </div>
         <div id="socials-container">
           <img
             src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
+            alt="Mon profil LinkedIn"
             class="icon"
             onclick="location.href='https://www.linkedin.com/in/matthieu-falezan-6ab88322b/'"
           />
           <img
             src="./assets/github.png"
-            alt="My Github profile"
+            alt="Mon profil Github"
             class="icon"
             onclick="location.href='https://github.com/mfalezan'"
           />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Apprenez-en davantage</p>
-      <h1 class="title">À propos de moi</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/competence.png"
-                alt="competence icon"
-                class="icon"
-              />
-              <h3>competence</h3>
-              <p>2+ years <br />Frontend Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
-            </p>
-          </div>
         </div>
       </div>
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#competence'"
+        onclick="location.href='./#moi'"
       />
     </section>
-    <section id="about">
+    <section id="moi">
+      <p class="section__text__p1">Apprenez-en davantage</p>
+      <h1 class="title">À propos de moi</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic"/>
+        </div>
+        <div class="about-details-container">
+          <div class="text-container">
+            <div class="details-container">
+              <p>
+                Salut, moi c'est matthieu j'ai 20 ans et je suis actuellement à l'IUT de Lannnion en
+                3eme année de BUT informatique. Je suis passionné par le sport, les jeux vidéos et la musique.
+                Je suis quelqu'un de très curieux et j'aime apprendre de nouvelles choses.
+              </p>
+            </div>
+          </div>
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/competence.png" alt="competence icon" class="icon"/>
+              <h3>competence</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon"/>
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+            </div>
+          </div>
+      
+        </div>
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experiences'"
+      />
+      </div>
+    </section>
+    <section id="experiences">
       <p class="section__text__p1">Apprenez-en davantage</p>
       <h1 class="title">Mon Experience</h1>
          <div class="section-container">
@@ -193,11 +183,11 @@
         </div>
       </div>
       <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#competence'"
-      />
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#projects'"
+    />
     </section>    
     <section id="competence">
       <p class="section__text__p1">Découvrez mes</p>
@@ -344,10 +334,14 @@
                 Github
               </button>
               <button
-                class="btn btn-color-2 project-btn testMgl"
+                class="btn btn-color-2 project-btn testMgl" data-mfp-src=".hidden-container"
               >
-                Live Demo
+                Voir plus
               </button>
+            </div>
+            <div class="hidden-container  mfp-hide">
+              <h1>testt</h1>
+              <p>Lorem ipsum fkgjnfdjklfg   </p>
             </div>
           </div>
           <div class="details-container color-container">
@@ -366,12 +360,11 @@
               >
                 Github
               </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+              <button class="btn btn-color-2 project-btn testMgl" data-mfp-src=".hidden-container">Voir plus</button>
+            </div>
+            <div class="hidden-container  mfp-hide">
+              <h1>testt</h1>
+              <p>Lorem ipsum fkgjnfdjklfg   </p>
             </div>
           </div>
           <div class="details-container color-container">
@@ -390,12 +383,11 @@
               >
                 Github
               </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+              <button class="btn btn-color-2 project-btn testMgl" data-mfp-src=".hidden-container">Voir plus</button>
+              <div class="hidden-container  mfp-hide">
+                <h1>testt2556</h1>
+                <p>Lorem ipsum fkgjnfdjklfg   </p>
+              </div>
             </div>
           </div>
         </div>
