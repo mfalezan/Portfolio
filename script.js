@@ -29,26 +29,6 @@ $(document).ready(function() {
   });
 });
 
-
-// $(document).ready(function() {
-//   const $cursor = $('.cursor');
-
-//   $(document).on('mousemove', function(e) {
-//     $cursor.attr('style', 'top:' + (e.pageY - 20) + 'px; left:' + (e.pageX - 20) + 'px;');
-//   });
-
-//   $(document).on('click', function() {
-//     $cursor.addClass('expand');
-
-//     setTimeout(function() {
-//       $cursor.removeClass('expand');
-//     }, 500);
-//   });
-// });
-
-
-
-
 $(document).ready(function(){
   $('.slick-slider').slick({
     infinite: true,
