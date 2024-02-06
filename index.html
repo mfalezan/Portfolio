@@ -16,9 +16,13 @@
     <script src="jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="script.js"></script>
+    
   </head>
   <body>
+    <div class="cursor"></div>
     <nav id="desktop-nav">
       <div class="logo">Matthieu Falezan</div>
       <div>
@@ -87,29 +91,34 @@
       <p class="section__text__p1">Apprenez-en davantage</p>
       <h1 class="title">À propos de moi</h1>
       <div class="section-container">
-        <div class="section__pic-container">
-          <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic"/>
-        </div>
         <div class="about-details-container">
           <div class="text-container">
             <div class="details-container">
               <p>
-                Salut, moi c'est matthieu j'ai 20 ans et je suis actuellement à l'IUT de Lannnion en
-                3eme année de BUT informatique. Je suis passionné par le sport, les jeux vidéos et la musique.
+                Je m'appelle Matthieu et j'ai actuellement 20 ans.
+                Je suis actuellement à l'IUT de Lannnion en 3eme année de BUT informatique et espère continuer en écolé d'ingénieur. 
                 Je suis quelqu'un de très curieux et j'aime apprendre de nouvelles choses.
               </p>
             </div>
           </div>
           <div class="about-containers">
             <div class="details-container">
-              <img src="./assets/competence.png" alt="competence icon" class="icon"/>
-              <h3>competence</h3>
-              <p>2+ years <br />Frontend Development</p>
+              <img src="./assets/mode-de-vie.png" alt="competence icon" class="icon"/>
+              <h3>Centres d'intérêts</h3>
+              <ul>
+                <li>Sport</li>
+                <li>Jeux Vidéos</li>
+                <li>Programmation</li>
+                <li>Musique</li>
+              </ul>
             </div>
             <div class="details-container">
-              <img src="./assets/education.png" alt="Education icon" class="icon"/>
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+              <img src="./assets/langue.png" alt="Education icon" class="icon"/>
+              <h3>Langues</h3>
+              <ul>
+                <li>Anglais: A2</li>
+                <li>Espagnol</li>
+              </ul>
             </div>
           </div>
       
@@ -286,6 +295,17 @@
                   class="icon"
                 />
                 <div>
+                  <h3>Spring Boot</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="competence icon"
+                  class="icon"
+                />
+                <div>
                   <h3>Php</h3>
                   <p>Intermediate</p>
                 </div>
@@ -314,80 +334,66 @@
     </section>
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
+      <h1 class="title">Mes Projets</h1>
       <div class="competence-details-container">
-        <div class="about-containers">
+        <div class="about-containers slick-slider">
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
+                <img src="./assets/project-1.png" alt="Project 1" class="project-img">
             </div>
             <h2 class="competence-sub-title project-title">Project One</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn testMgl" data-mfp-src=".hidden-container"
-              >
-                Voir plus
-              </button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                <button class="btn btn-color-2 project-btn" data-mfp-src="#hidden-container-1">Voir plus</button>
             </div>
-            <div class="hidden-container  mfp-hide">
-              <h1>testt</h1>
-              <p>Lorem ipsum fkgjnfdjklfg   </p>
+            <div id="hidden-container-1" class="hidden-container mfp-hide">
+                <h1>Projet 1</h1>
+                <p>Lorem ipsum fkgjnfdjklfg</p>
             </div>
           </div>
+            
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
+                <img src="./assets/project-2.png" alt="Project 2" class="project-img">
             </div>
-            <h2 class="competence-sub-title project-title">Project Two</h2>
+            <h2 class="competence-sub-title project-title">Project 2</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button class="btn btn-color-2 project-btn testMgl" data-mfp-src=".hidden-container">Voir plus</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                <button class="btn btn-color-2 project-btn" data-mfp-src="#hidden-container-2">Voir plus</button>
             </div>
-            <div class="hidden-container  mfp-hide">
-              <h1>testt</h1>
-              <p>Lorem ipsum fkgjnfdjklfg   </p>
+            <div id="hidden-container-2" class="hidden-container mfp-hide">
+                <h1>Projet 2</h1>
+                <p>Lorem ipsum fkgjnfdjklfg</p>
             </div>
           </div>
+
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
+                <img src="./assets/project-3.png" alt="Project3" class="project-img">
             </div>
-            <h2 class="competence-sub-title project-title">Project Three</h2>
+            <h2 class="competence-sub-title project-title">Project 3</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button class="btn btn-color-2 project-btn testMgl" data-mfp-src=".hidden-container">Voir plus</button>
-              <div class="hidden-container  mfp-hide">
-                <h1>testt2556</h1>
-                <p>Lorem ipsum fkgjnfdjklfg   </p>
-              </div>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                <button class="btn btn-color-2 project-btn" data-mfp-src="#hidden-container-3">Voir plus</button>
+            </div>
+            <div id="hidden-container-3" class="hidden-container mfp-hide">
+                <h1>Projet 3</h1>
+                <p>Lorem ipsum fkgjnfdjklfg</p>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+                <img src="./assets/project-2.png" alt="Project4" class="project-img">
+            </div>
+            <h2 class="competence-sub-title project-title">Project 4</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                <button class="btn btn-color-2 project-btn" data-mfp-src="#hidden-container-4">Voir plus</button>
+            </div>
+            <div id="hidden-container-4" class="hidden-container mfp-hide">
+                <h1>Projet 4</h1>
+                <p>Lorem ipsum fkgjnfdjklfg</p>
             </div>
           </div>
         </div>
@@ -425,9 +431,10 @@
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#competence">competence</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#moi">Moi</a></li>
+            <li><a href="#experiences">Experiences</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
