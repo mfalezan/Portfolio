@@ -5,6 +5,10 @@ nav,
   display: flex;
 }
 
+#desktop-nav {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 nav {
   justify-content: space-around;
   align-items: center;
@@ -26,12 +30,21 @@ a {
   text-decoration: none;
   text-decoration-color: white;
 }
+/* 
 
+
+
+
+BUG HOVER A
+
+
+
+*/
 a:hover {
-  color: grey;
+  color:#e9967a;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: #e9967a;
   font-weight: 600;
 }
 
@@ -122,7 +135,7 @@ a:hover {
 
 /* Section profil */
 
-#profile {
+#profil {
     display: flex;
     justify-content: center;
     gap: 5rem;

@@ -1,5 +1,5 @@
 @media screen and (max-width: 1400px) {
-  #profile {
+  #profil {
     height: 83vh;
     margin-bottom: 6rem;
   }
@@ -23,7 +23,7 @@
   .competence-details-container {
     margin-top: 2rem;
   }
-  #profile,
+  #profil,
   .section-container {
     display: block;
   }
@@ -52,7 +52,7 @@
   footer {
     height: 40vh;
   }
-  #profile {
+  #profil {
     height: 83vh;
     margin-bottom: 0;
   }

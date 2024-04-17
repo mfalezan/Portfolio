@@ -160,9 +160,9 @@ section {
   display: flex;
 }
 
-/* PROFILE SECTION */
+/* profil SECTION */
 
-#profile {
+#profil {
   display: flex;
   justify-content: center;
   gap: 5rem;
